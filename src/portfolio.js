@@ -1,7 +1,7 @@
-import GitHubIcon from '@material-ui/icons/GitHub'
-import EmailIcon from '@material-ui/icons/Email'
 import backgroundImg from './images/home-page.png'
 import aboutImg from './images/about-me.png'
+import { FaJs, FaReact, FaHtml5, FaCss3, FaNodeJs, FaUnity, FaGitAlt, FaGithub, FaFigma } from 'react-icons/fa';
+import { SiC, SiCplusplus, SiCsharp, SiMongodb, SiBlender, SiCanva, SiGimp } from "react-icons/si";
 
 const home = {
   name: 'Wing',
@@ -50,22 +50,73 @@ const projects = [
   },
 ]
 
-const skills = [
-  // skills can be added or removed
-  // if there are no skills, Skills section won't show up
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Redux',
-  'SASS',
-  'Material UI',
-  'Git',
-  'CI/CD',
-  'Jest',
-  'Enzyme',
-]
+// const skills = [
+//   // skills can be added or removed
+//   // if there are no skills, Skills section won't show up
+//   'HTML',
+//   'CSS',
+//   'JavaScript',
+//   'TypeScript',
+//   'React',
+//   'Redux',
+//   'SASS',
+//   'Material UI',
+//   'Git',
+//   'CI/CD',
+//   'Jest',
+//   'Enzyme',
+// ]
+
+const icons = {
+  CLanguage: SiC, // Add respective icon for C language if available
+  Cplusplus: SiCplusplus, // Add respective icon for C++ language if available
+  Csharp: SiCsharp, // Add respective icon for C# language if available
+  JavaScript: FaJs, // Example icon for JavaScript
+  React: FaReact, // Example icon for React
+  HTML5: FaHtml5, // Example icon for HTML5
+  CSS3: FaCss3, // Example icon for CSS3
+  MongoDB: SiMongodb, // Example icon for MongoDB
+  Nodejs: FaNodeJs, // Example icon for Node.js
+  Unity: FaUnity, // Example icon for Unity
+  Git: FaGitAlt, // Example icon for Git
+  GitHub: FaGithub, // Example icon for GitHub
+  Blender: SiBlender, // Add respective icon for Blender if available
+  Figma: FaFigma, // Add respective icon for Figma if available
+  Canva: SiCanva, // Add respective icon for Canva if available
+  Gimp: SiGimp, // Add respective icon for Gimp if available
+  // Add icons for other skills/categories as needed
+};
+
+
+const skills = {
+  LanguagesIcons: [SiC, SiCplusplus, SiCsharp, FaJs],
+  languages: [
+    'C',
+    'C++',
+    'C#',
+    'JavaScript'
+  ],
+  web: [
+    'React',
+    'HTML5',
+    'CSS3',
+    'MongoDB',
+    'Nodejs'
+  ],
+  gaming: [
+    'Unity'
+  ],
+  versionControl: [
+    'Git',
+    'GitHub'
+  ],
+  design: [
+    'Blender',
+    'Figma',
+    'Canva',
+    'Gimp'
+  ]
+}
 
 const contact = {
   descriptions: [

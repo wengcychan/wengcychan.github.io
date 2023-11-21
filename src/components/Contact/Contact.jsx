@@ -1,6 +1,6 @@
 import uniqid from 'uniqid'
-import EmailIcon from '@material-ui/icons/Email'
-import PhoneIcon from '@material-ui/icons/Phone'
+// import EmailIcon from '@material-ui/icons/Email'
+// import PhoneIcon from '@material-ui/icons/Phone'
 import { contact } from '../../portfolio'
 import './Contact.css'
 
@@ -28,11 +28,11 @@ const Contact = () => {
         </div>
         <div className='left contact__social'>
           <div className='contact__socialItem'>
-            <EmailIcon className='icon'/>
+            {/* <EmailIcon className='icon'/> */}
             { social.email }
           </div>
           <div className='contact__socialItem'>
-          <PhoneIcon className='icon'/>
+          {/* <PhoneIcon className='icon'/> */}
             { social.phone }
           </div>
         </div>
