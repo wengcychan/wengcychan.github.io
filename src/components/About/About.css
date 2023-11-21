@@ -1,7 +1,7 @@
 .about__desc {
   font-size: 1rem;
   max-width: 600px;
-  margin-top: 2.4em;
+  margin: 2em;
 }
 
 @media (max-width: 600px) {

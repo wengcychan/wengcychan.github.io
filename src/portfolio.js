@@ -1,3 +1,5 @@
+import GitHubIcon from '@material-ui/icons/GitHub'
+import EmailIcon from '@material-ui/icons/Email'
 import backgroundImg from './images/home-page.png'
 import aboutImg from './images/about-me.png'
 
@@ -12,10 +14,10 @@ const home = {
 }
 
 const about = {
-  description_p1:
+  descriptions: [
     'I am currently studying at Hive Helsinki, transitioning from traffic engineering to software development. I am exploring web and game development, along with C / C++ programming languages.',
-  description_p2:
     'I love solving problems and discovering new things. I am excited to use what I learn to create innovative tech solutions.',
+  ],
   img: aboutImg,
 }
 
@@ -66,8 +68,14 @@ const skills = [
 ]
 
 const contact = {
-  // email is optional - if left empty Contact section won't show up
-  email: 'johnsmith@mail.com',
+  descriptions: [
+    'I am open to exploring internships or roles as a junior software developer.',
+    'Get in touch to discuss project collaborations or just say hi — I am eager to chat and learn about potential opportunities!',
+  ],
+  social: {
+    email: 'wengcychan95@gmail.com',
+    phone: '+358 41 474 7515'
+  },
 }
 
 export { home, about, projects, skills, contact }

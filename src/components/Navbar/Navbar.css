@@ -1,18 +1,11 @@
-/* .nav {
-  height: 8em;
-  max-width: 1100px;
-  width: 95%;
-  margin: 0 auto;
-  justify-content: flex-end;
-} */
-
 .nav {
   display: flex;
   height: 5rem;
   position: fixed;
   top: 0;
-  width: 95%;
+  width: 100%;
   justify-content: flex-end;
+  padding-right: 3rem;
 }
 
 @media (max-width: 600px) {
