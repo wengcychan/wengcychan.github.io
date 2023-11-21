@@ -1,6 +1,9 @@
 .home {
+  height: 100vh;
+}
+
+.home__content {
   flex-direction: column;
-  margin-top: 3em;
 }
 
 .home__name {
@@ -8,30 +11,25 @@
 }
 
 .home__role {
-  margin-top: 1.2em;
+  margin-top: 0.2em;
+  font-size: 3rem;
 }
 
-.home__desc {
-  font-size: 1rem;
-  max-width: 600px;
-}
-
-.home__desc,
+.home__about,
 .home__contact {
   margin-top: 2.4em;
 }
 
 .home .link--icon {
-  margin-right: 0.8em;
+  margin-right: 1.5em;
 }
 
-.home .btn--outline {
-  margin-right: 1em;
+.home .link--icon .icon {
+  font-size: 2.3rem;
 }
 
 @media (max-width: 600px) {
   .app .home {
-    align-items: flex-start;
     margin-top: 2em;
   }
 }

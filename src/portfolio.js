@@ -1,27 +1,22 @@
+import backgroundImg from './images/home-page.png'
+import aboutImg from './images/about-me.png'
+
 const home = {
-  // all the properties are optional - can be left empty or deleted
-  name: 'John Smith',
-  role: 'Front End Engineer',
-  description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
-  resume: 'https://example.com',
+  name: 'Wing',
+  role: 'A Software Developer',
   social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    email: 'mailto:wengcychan95@gmail.com',
+    github: 'https://github.com/wengcychan',
   },
+  img: backgroundImg, 
 }
 
 const about = {
-  // all the properties are optional - can be left empty or deleted
-  name: 'John Smith',
-  role: 'Front End Engineer',
-  description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
-  resume: 'https://example.com',
-  social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
-  },
+  description_p1:
+    'I am currently studying at Hive Helsinki, transitioning from traffic engineering to software development. I am exploring web and game development, along with C / C++ programming languages.',
+  description_p2:
+    'I love solving problems and discovering new things. I am excited to use what I learn to create innovative tech solutions.',
+  img: aboutImg,
 }
 
 const projects = [

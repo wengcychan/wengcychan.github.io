@@ -22,6 +22,9 @@
   --clr-primary: #90a0d9;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  --gradient-start: #004AAD;
+  --gradient-end: #CB6CE6;
+
 }
 
 main {
@@ -31,17 +34,21 @@ main {
 }
 
 .section {
-  margin-top: 5em;
+  padding-top: 8rem;
 }
 
 .section__title {
-  text-align: center;
   margin-bottom: 1em;
 }
 
 .center {
   display: flex;
   align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: flex-start;
 }
 
 .link {
@@ -83,7 +90,7 @@ main {
   display: block;
   cursor: pointer;
   padding: 0.8em 1.4em;
-  font-weight: 500;
+  font-weight: 900;
   font-size: 0.9rem;
   transition: transform 0.2s ease-in-out;
 }
@@ -91,6 +98,7 @@ main {
 .btn--outline {
   color: var(--clr-primary);
   border: 2px solid var(--clr-primary);
+  border-radius: 1rem;
   position: relative;
   overflow: hidden;
   z-index: 1;

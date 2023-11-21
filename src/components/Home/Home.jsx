@@ -1,54 +1,49 @@
 import GitHubIcon from '@material-ui/icons/GitHub'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import EmailIcon from '@material-ui/icons/Email'
 import { home } from '../../portfolio'
 import './Home.css'
 
 const Home = () => {
-  const { name, role, description, resume, social } = home
+  const { name, role, social, img } = home
 
   return (
     <div className='home center'>
-      {name && (
+      <div className='home__content left'>
         <h1>
-          Hi, I am <span className='home__name'>{name}.</span>
+          Hi, I am {name}
         </h1>
-      )}
 
-      {role && <h2 className='home__role'>A {role}.</h2>}
-      <p className='home__desc'>{description && description}</p>
+        <h2 className='home__role'>{role}</h2>
 
-      <div className='home__contact center'>
-        {resume && (
-          <a href={resume}>
-            <span type='button' className='btn btn--outline'>
-              Resume
-            </span>
-          </a>
-        )}
+        <div className='home__contact center'>
 
-        {social && (
-          <>
-            {social.github && (
-              <a
-                href={social.github}
-                aria-label='github'
-                className='link link--icon'
-              >
-                <GitHubIcon />
-              </a>
-            )}
+          <div>
+            <a
+              href={social.github}
+              aria-label='github'
+              className='link link--icon'
+            >
+              <GitHubIcon className='icon'/>
+            </a>
 
-            {social.linkedin && (
-              <a
-                href={social.linkedin}
-                aria-label='linkedin'
-                className='link link--icon'
-              >
-                <LinkedInIcon />
-              </a>
-            )}
-          </>
-        )}
+            <a
+              href={social.email}
+              aria-label='email'
+              className='link link--icon'
+            >
+              <EmailIcon className='icon'/>
+            </a>
+          </div>
+        </div>
+
+        <a href='#about'>
+          <span type='button' className='home__about btn btn--outline'>
+            More about me
+          </span>
+        </a>  
+      </div>
+      <div className='home__background'>
+        <img src={ img } alt="background" width="50%"/>
       </div>
     </div>
   )

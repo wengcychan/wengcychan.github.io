@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { ThemeContext } from './contexts/theme'
-import Header from './components/Header/Header'
+import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home/Home'
 import About from './components/About/About'
 import Projects from './components/Projects/Projects'
@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <div id='top' className={`${themeName} app`}>
-      <Header />
+      <Navbar />
 
       <main>
         <Home />
