@@ -4,8 +4,7 @@ import { home } from '../../portfolio'
 const Footer = () => {
 
   const { social, icons } = home
-  const GithubIcon = icons.github
-  const EmailIcon = icons.email
+  const { EmailIcon, GithubIcon } = icons
   
   return (
     <footer className='footer'>

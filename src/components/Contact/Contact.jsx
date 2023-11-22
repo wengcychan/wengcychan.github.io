@@ -5,8 +5,7 @@ import './Contact.css'
 const Contact = () => {
   
   const { descriptions, social, icons } = contact
-  const EmailIcon = icons.email
-  const PhoneIcon = icons.phone
+  const { EmailIcon, PhoneIcon } = icons
 
   return (
     <section id='contact' className='section contact'>

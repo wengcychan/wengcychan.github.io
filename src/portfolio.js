@@ -14,8 +14,8 @@ const home = {
   },
   img: backgroundImg,
   icons: {
-    email: MdEmail,
-    github: FaGithub
+    EmailIcon: MdEmail,
+    GithubIcon: FaGithub
   },
 }
 
@@ -56,34 +56,97 @@ const projects = [
   },
 ]
 
-const skills = {
-  "Languages": {
-    'C': SiC,
-    'C++': SiCplusplus,
-    'C#': SiCsharp,
-    'JavaScript': FaJs,
+const skills = [
+  {
+    category: 'Languages',
+    stack: [
+      {
+        description: 'C',
+        Icon: SiC
+      },
+      {
+        description: 'C++',
+        Icon: SiCplusplus
+      },
+      {
+        description: 'C#',
+        Icon: SiCsharp
+      },
+      {
+        description: 'JavaScript',
+        Icon: FaJs
+      },
+    ]
   },
-  "Web Development": {
-    'React': FaReact,
-    'HTML5': FaHtml5,
-    'CSS3': FaCss3,
-    'MongoDB': SiMongodb,
-    'Nodejs': FaNodeJs
+  {
+    category: 'Web Development',
+    stack: [
+      {
+        description: 'React',
+        Icon: FaReact
+      },
+      {
+        description: 'HTML5',
+        Icon: FaHtml5
+      },
+      {
+        description: 'CSS3',
+        Icon: FaCss3
+      },
+      {
+        description: 'MongoDB',
+        Icon: SiMongodb
+      },
+      {
+        description: 'Nodejs',
+        Icon: FaNodeJs
+      },
+    ]
   },
-  "Gaming": {
-    'Unity': FaUnity
+  {
+    category: 'Gaming',
+    stack: [
+      {
+        description: 'Unity',
+        Icon: FaUnity
+      }
+    ] 
   },
-  "Version Control": {
-    'Git': FaGitAlt,
-    'GitHub': FaGithub
+  {
+    category: 'Version Control',
+    stack: [
+      {
+        description:'Git',
+        Icon: FaGitAlt
+      },
+      {
+        description: 'GitHub',
+        Icon: FaGithub
+      }
+    ]
   },
-  "Design": {
-    'Blender': SiBlender,
-    'Figma': FaFigma,
-    'Canva': SiCanva,
-    'Gimp': SiGimp
+  {
+    category: 'Design',
+    stack: [
+      {
+        description: 'Blender',
+        Icon: SiBlender
+      },
+      {
+        description: 'Figma',
+        Icon: FaFigma
+      },
+      {
+        description: 'Canva',
+        Icon: SiCanva
+      },
+      {
+        description: 'Gimp',
+        Icon: SiGimp
+      }
+    ]
   },
-}
+]
 
 const contact = {
   descriptions: [
@@ -95,8 +158,8 @@ const contact = {
     phone: '+358 41 474 7515'
   },
   icons: {
-    email: MdEmail,
-    phone: FaPhoneFlip
+    EmailIcon: MdEmail,
+    PhoneIcon: FaPhoneFlip
   },
 }
 

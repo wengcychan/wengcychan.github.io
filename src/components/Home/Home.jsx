@@ -3,8 +3,7 @@ import './Home.css'
 
 const Home = () => {
   const { name, role, social, img, icons } = home
-  const GithubIcon = icons.github
-  const EmailIcon = icons.email
+  const { EmailIcon, GithubIcon } = icons
 
   return (
     <div className='home center'>
