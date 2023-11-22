@@ -2,6 +2,8 @@ import backgroundImg from './images/home-page.png'
 import aboutImg from './images/about-me.png'
 import { FaJs, FaReact, FaHtml5, FaCss3, FaNodeJs, FaUnity, FaGitAlt, FaGithub, FaFigma } from 'react-icons/fa';
 import { SiC, SiCplusplus, SiCsharp, SiMongodb, SiBlender, SiCanva, SiGimp } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
+import { FaPhoneFlip } from "react-icons/fa6";
 
 const home = {
   name: 'Wing',
@@ -10,7 +12,11 @@ const home = {
     email: 'mailto:wengcychan95@gmail.com',
     github: 'https://github.com/wengcychan',
   },
-  img: backgroundImg, 
+  img: backgroundImg,
+  icons: {
+    email: FaJs,
+    github: FaGithub
+  },
 }
 
 const about = {
@@ -50,72 +56,33 @@ const projects = [
   },
 ]
 
-// const skills = [
-//   // skills can be added or removed
-//   // if there are no skills, Skills section won't show up
-//   'HTML',
-//   'CSS',
-//   'JavaScript',
-//   'TypeScript',
-//   'React',
-//   'Redux',
-//   'SASS',
-//   'Material UI',
-//   'Git',
-//   'CI/CD',
-//   'Jest',
-//   'Enzyme',
-// ]
-
-const icons = {
-  CLanguage: SiC, // Add respective icon for C language if available
-  Cplusplus: SiCplusplus, // Add respective icon for C++ language if available
-  Csharp: SiCsharp, // Add respective icon for C# language if available
-  JavaScript: FaJs, // Example icon for JavaScript
-  React: FaReact, // Example icon for React
-  HTML5: FaHtml5, // Example icon for HTML5
-  CSS3: FaCss3, // Example icon for CSS3
-  MongoDB: SiMongodb, // Example icon for MongoDB
-  Nodejs: FaNodeJs, // Example icon for Node.js
-  Unity: FaUnity, // Example icon for Unity
-  Git: FaGitAlt, // Example icon for Git
-  GitHub: FaGithub, // Example icon for GitHub
-  Blender: SiBlender, // Add respective icon for Blender if available
-  Figma: FaFigma, // Add respective icon for Figma if available
-  Canva: SiCanva, // Add respective icon for Canva if available
-  Gimp: SiGimp, // Add respective icon for Gimp if available
-  // Add icons for other skills/categories as needed
-};
-
-
 const skills = {
-  LanguagesIcons: [SiC, SiCplusplus, SiCsharp, FaJs],
-  languages: [
-    'C',
-    'C++',
-    'C#',
-    'JavaScript'
-  ],
-  web: [
-    'React',
-    'HTML5',
-    'CSS3',
-    'MongoDB',
-    'Nodejs'
-  ],
-  gaming: [
-    'Unity'
-  ],
-  versionControl: [
-    'Git',
-    'GitHub'
-  ],
-  design: [
-    'Blender',
-    'Figma',
-    'Canva',
-    'Gimp'
-  ]
+  "Languages": {
+    'C': SiC,
+    'C++': SiCplusplus,
+    'C#': SiCsharp,
+    'JavaScript': FaJs,
+  },
+  "Web Development": {
+    'React': FaReact,
+    'HTML5': FaHtml5,
+    'CSS3': FaCss3,
+    'MongoDB': SiMongodb,
+    'Nodejs': FaNodeJs
+  },
+  "Gaming": {
+    'Unity': FaUnity
+  },
+  "Version Control": {
+    'Git': FaGitAlt,
+    'GitHub': FaGithub
+  },
+  "Design": {
+    'Blender': SiBlender,
+    'Figma': FaFigma,
+    'Canva': SiCanva,
+    'Gimp': SiGimp
+  },
 }
 
 const contact = {
@@ -126,6 +93,10 @@ const contact = {
   social: {
     email: 'wengcychan95@gmail.com',
     phone: '+358 41 474 7515'
+  },
+  icons: {
+    email: MdEmail,
+    phone: FaPhoneFlip
   },
 }
 
