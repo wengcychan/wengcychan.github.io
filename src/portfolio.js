@@ -14,7 +14,7 @@ const home = {
   },
   img: backgroundImg,
   icons: {
-    email: FaJs,
+    email: MdEmail,
     github: FaGithub
   },
 }

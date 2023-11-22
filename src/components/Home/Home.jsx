@@ -1,10 +1,10 @@
-// import GitHubIcon from '@material-ui/icons/GitHub'
-// import EmailIcon from '@material-ui/icons/Email'
 import { home } from '../../portfolio'
 import './Home.css'
 
 const Home = () => {
-  const { name, role, social, img } = home
+  const { name, role, social, img, icons } = home
+  const GithubIcon = icons.github
+  const EmailIcon = icons.email
 
   return (
     <div className='home center'>
@@ -23,7 +23,7 @@ const Home = () => {
               aria-label='github'
               className='link link--icon'
             >
-              {/* <GitHubIcon className='icon'/> */}
+              <GithubIcon className='icon'/>
             </a>
 
             <a
@@ -31,7 +31,7 @@ const Home = () => {
               aria-label='email'
               className='link link--icon'
             >
-              {/* <EmailIcon className='icon'/> */}
+              <EmailIcon className='icon'/>
             </a>
           </div>
         </div>

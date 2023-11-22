@@ -1,11 +1,11 @@
 import './Footer.css'
-// import GitHubIcon from '@material-ui/icons/GitHub'
-// import EmailIcon from '@material-ui/icons/Email'
 import { home } from '../../portfolio'
 
 const Footer = () => {
 
-  const { social } = home
+  const { social, icons } = home
+  const GithubIcon = icons.github
+  const EmailIcon = icons.email
   
   return (
     <footer className='footer'>
@@ -14,14 +14,14 @@ const Footer = () => {
         aria-label='github'
         className='link link--icon'
       >
-        {/* <GitHubIcon className='icon'/> */}
+        <GithubIcon className='icon'/>
       </a>
       <a
         href={social.email}
         aria-label='email'
         className='link link--icon'
       >
-        {/* <EmailIcon className='icon'/> */}
+        <EmailIcon className='icon'/>
       </a>
     </footer>
   )

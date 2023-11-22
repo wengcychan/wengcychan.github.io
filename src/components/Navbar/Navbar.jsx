@@ -1,8 +1,6 @@
 import { useContext, useState } from 'react'
-// import Brightness2Icon from '@material-ui/icons/Brightness2'
-// import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
-// import MenuIcon from '@material-ui/icons/Menu'
-// import CloseIcon from '@material-ui/icons/Close'
+import { MdLightMode, MdDarkMode } from "react-icons/md";
+import { IoMenu, IoClose } from "react-icons/io5";
 import { ThemeContext } from '../../contexts/theme'
 import './Navbar.css'
 
@@ -66,7 +64,7 @@ const Navbar = () => {
         className='btn btn--icon nav__theme'
         aria-label='toggle theme'
       >
-        {/* {themeName === 'dark' ? <WbSunnyRoundedIcon /> : <Brightness2Icon />} */}
+        {themeName === 'dark' ? <MdLightMode className='icon' /> : <MdDarkMode className='icon'/>}
       </button>
 
       <button
@@ -75,7 +73,7 @@ const Navbar = () => {
         className='btn btn--icon nav__hamburger'
         aria-label='toggle navigation'
       >
-        {/* {showNavList ? <CloseIcon /> : <MenuIcon />} */}
+        {showNavList ? <IoClose className='icon'/> : <IoMenu className='icon'/>}
       </button>
     </nav>
   )
