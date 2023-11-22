@@ -1,5 +1,14 @@
 import backgroundImg from './images/home-page.png'
 import aboutImg from './images/about-me.png'
+import projectGreenBinImg from './images/projects/web/GreenBin.png'
+import projectRollToRootImg from './images/projects/gaming/roll-to-root.png'
+import projectCrowdBanImg from './images/projects/gaming/crowd-ban.png'
+import projectCommunity360Img from './images/projects/gaming/community360.png'
+import projectminiRTImg from './images/projects/graphics/miniRT.png'
+import projectFdFImg from './images/projects/graphics/fdf.png'
+import projectMinishellImg from './images/projects/others/minishell.png'
+import projectPhiloImg from './images/projects/others/philo.png'
+
 import { FaJs, FaReact, FaHtml5, FaCss3, FaNodeJs, FaUnity, FaGitAlt, FaGithub, FaFigma } from 'react-icons/fa';
 import { SiC, SiCplusplus, SiCsharp, SiMongodb, SiBlender, SiCanva, SiGimp } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
@@ -28,31 +37,105 @@ const about = {
 }
 
 const projects = [
-  // projects can be added an removed
-  // if there are no projects, Projects section won't show up
   {
-    name: 'Project 1',
+    name: 'GreenBin',
+    category: 'web',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'Waste management system',
+    stack: ['React', 'HTML', 'CSS'],
+    img: projectGreenBinImg,
+    sourceCode: 'https://github.com/wengcychan/greenbin.git',
+    liveDemo: 'https://wengcychan.github.io/greenbin/',
   },
   {
-    name: 'Project 2',
+    name: 'Portfolio',
+    category: 'web',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'This personal portfolio',
+    stack: ['React', 'HTML', 'CSS'],
+    img: projectGreenBinImg,
+    sourceCode: 'https://github.com/wengcychan/portfolio.git',
+    liveDemo: 'https://wengcychan.github.io/portfolio/',
   },
   {
-    name: 'Project 3',
+    name: 'Roll to Root',
+    category: 'gaming',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'Game inspired by French Petanque',
+    stack: ['Unity', 'C#'],
+    img: projectRollToRootImg,
+    sourceCode: 'https://github.com/wengcychan/roll-to-root.git',
+    liveDemo: 'https://wchan.itch.io/roll-to-root',
+  },
+  {
+    name: 'Crowd Ban',
+    category: 'gaming',
+    description:
+      'Crowd control game',
+    stack: ['Unity', 'C#'],
+    img: projectCrowdBanImg,
+    sourceCode: 'https://github.com/wengcychan/crowd-ban.git',
+    liveDemo: 'https://wchan.itch.io/crowd-ban',
+  },
+  {
+    name: 'Community360',
+    category: 'gaming',
+    description:
+      'City planning platform',
+    stack: ['Unity3D', 'ArcGIS Maps SDK'],
+    img: projectCommunity360Img,
+    sourceCode: 'https://github.com/wengcychan/community360.git',
+    liveDemo: null,
+  },
+  {
+    name: 'MiniRT',
+    category: 'graphics',
+    description:
+      'Raytracing project',
+    stack: ['C'],
+    img: projectminiRTImg,
+    sourceCode: 'https://github.com/wengcychan/hive-42cursus.git',
+    liveDemo: null,
+  },
+  {
+    name: 'FdF',
+    category: 'graphics',
+    description:
+      'Wireframe model of a landscape',
+    stack: ['C'],
+    img: projectFdFImg,
+    sourceCode: 'https://github.com/wengcychan/42cursus-fdf.git',
+    liveDemo: null,
+  },
+  {
+    name: 'Push Swap',
+    category: 'others',
+    description:
+      'Sort data on a stack',
+    stack: ['C' , 'Algorithm' ],
+    img: projectPhiloImg,
+    sourceCode: 'https://github.com/wengcychan/42cursus-push_swap.git',
+    liveDemo: null,
+  },
+  {
+    name: 'Philosophers',
+    category: 'others',
+    description:
+      '"Dining Philosophers" problem',
+    stack: ['C' , 'Concurrent programming' ],
+    img: projectPhiloImg,
+    sourceCode: 'https://github.com/wengcychan/42cursus-philo.git',
+    liveDemo: null,
+  },
+  {
+    name: 'Minishell',
+    category: 'others',
+    description:
+      'Custom shell similar to bash',
+    stack: ['C' , 'Unix' ],
+    img: projectMinishellImg,
+    sourceCode: 'https://github.com/wengcychan/42cursus-minishell.git',
+    liveDemo: null,
   },
 ]
 

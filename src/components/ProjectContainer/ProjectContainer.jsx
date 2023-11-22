@@ -3,41 +3,49 @@ import { FaGithub as GithubIcon } from 'react-icons/fa';
 import { FiExternalLink as DemoIcon } from "react-icons/fi";
 import './ProjectContainer.css'
 
-const ProjectContainer = ({ project }) => (
-  <div className='project'>
-    <h3>{project.name}</h3>
+const ProjectContainer = ({ project }) => {
 
-    <p className='project__description'>{project.description}</p>
-    {project.stack && (
+  const { name, category, description, stack, img, sourceCode, liveDemo } = project
+  
+  return (
+    <div className='project'>
+
+      <h4>{ name }</h4>
+
+      <p className='project__description'>{ description }</p>
+    
       <ul className='project__stack'>
-        {project.stack.map((item) => (
-          <li key={uniqid()} className='project__stack-item'>
-            {item}
+        { stack.map((item) => (
+          <li key={ uniqid() } className='project__stack-item btn--outline'>
+            { item }
           </li>
         ))}
       </ul>
-    )}
 
-    {project.sourceCode && (
-      <a
-        href={project.sourceCode}
-        aria-label='source code'
-        className='link link--icon'
-      >
-        <GithubIcon />
-      </a>
-    )}
+      <img src={ img } alt='project image' className='project__img'/>
+    
+      { sourceCode && (
+        <a
+          href={ sourceCode }
+          aria-label='source code'
+          className='link link--icon'
+        >
+          <GithubIcon />
+        </a>
+      )}
 
-    {project.livePreview && (
-      <a
-        href={project.livePreview}
-        aria-label='live preview'
-        className='link link--icon'
-      >
-        <DemoIcon />
-      </a>
-    )}
-  </div>
-)
+      { liveDemo && (
+        <a
+          href={ liveDemo }
+          aria-label='live preview'
+          className='link link--icon'
+        >
+          <DemoIcon />
+        </a>
+      )}
+
+    </div>
+  )
+}
 
 export default ProjectContainer
