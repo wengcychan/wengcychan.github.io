@@ -1,6 +1,6 @@
 import uniqid from 'uniqid'
-// import GitHubIcon from '@material-ui/icons/GitHub'
-// import LaunchIcon from '@material-ui/icons/Launch'
+import { FaGithub as GithubIcon } from 'react-icons/fa';
+import { FiExternalLink as DemoIcon } from "react-icons/fi";
 import './ProjectContainer.css'
 
 const ProjectContainer = ({ project }) => (
@@ -24,7 +24,7 @@ const ProjectContainer = ({ project }) => (
         aria-label='source code'
         className='link link--icon'
       >
-        {/* <GitHubIcon /> */}
+        <GithubIcon />
       </a>
     )}
 
@@ -34,7 +34,7 @@ const ProjectContainer = ({ project }) => (
         aria-label='live preview'
         className='link link--icon'
       >
-        {/* <LaunchIcon /> */}
+        <DemoIcon />
       </a>
     )}
   </div>
