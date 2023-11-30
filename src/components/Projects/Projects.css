@@ -5,3 +5,14 @@
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
   grid-gap: 2em;
 }
+
+.project__list {
+  display: flex;
+  margin-left: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.project__list-item {
+  margin-right: 1.5em;
+  font-size: 1.2em;
+}

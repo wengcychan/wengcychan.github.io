@@ -43,7 +43,10 @@ const projects = [
     description:
       'Waste management system',
     stack: ['React', 'HTML', 'CSS'],
-    img: projectGreenBinImg,
+    img: { 
+      src: projectGreenBinImg, 
+      alt: 'GreenBin Project Image', 
+    },
     sourceCode: 'https://github.com/wengcychan/greenbin.git',
     liveDemo: 'https://wengcychan.github.io/greenbin/',
   },
@@ -53,7 +56,10 @@ const projects = [
     description:
       'This personal portfolio',
     stack: ['React', 'HTML', 'CSS'],
-    img: projectGreenBinImg,
+    img: {
+      src: projectGreenBinImg, 
+      alt: 'GreenBin Project Image', 
+    },
     sourceCode: 'https://github.com/wengcychan/portfolio.git',
     liveDemo: 'https://wengcychan.github.io/portfolio/',
   },
@@ -63,7 +69,10 @@ const projects = [
     description:
       'Game inspired by French Petanque',
     stack: ['Unity', 'C#'],
-    img: projectRollToRootImg,
+    img: {
+      src: projectRollToRootImg, 
+      alt: 'Roll to Root Project Image', 
+    },
     sourceCode: 'https://github.com/wengcychan/roll-to-root.git',
     liveDemo: 'https://wchan.itch.io/roll-to-root',
   },
@@ -73,7 +82,10 @@ const projects = [
     description:
       'Crowd control game',
     stack: ['Unity', 'C#'],
-    img: projectCrowdBanImg,
+    img: {
+      src: projectCrowdBanImg, 
+      alt: 'Crowd Ban Project Image', 
+    },
     sourceCode: 'https://github.com/wengcychan/crowd-ban.git',
     liveDemo: 'https://wchan.itch.io/crowd-ban',
   },
@@ -83,7 +95,10 @@ const projects = [
     description:
       'City planning platform',
     stack: ['Unity3D', 'ArcGIS Maps SDK'],
-    img: projectCommunity360Img,
+    img: {
+      src: projectCommunity360Img, 
+      alt: 'Community360 Project Image', 
+    },
     sourceCode: 'https://github.com/wengcychan/community360.git',
     liveDemo: null,
   },
@@ -93,7 +108,10 @@ const projects = [
     description:
       'Raytracing project',
     stack: ['C'],
-    img: projectminiRTImg,
+    img: {
+      src: projectminiRTImg, 
+      alt: 'MiniRT Project Image', 
+    },
     sourceCode: 'https://github.com/wengcychan/hive-42cursus.git',
     liveDemo: null,
   },
@@ -103,7 +121,10 @@ const projects = [
     description:
       'Wireframe model of a landscape',
     stack: ['C'],
-    img: projectFdFImg,
+    img: {
+      src: projectFdFImg, 
+      alt: 'FdF Project Image', 
+    },
     sourceCode: 'https://github.com/wengcychan/42cursus-fdf.git',
     liveDemo: null,
   },
@@ -113,7 +134,10 @@ const projects = [
     description:
       'Sort data on a stack',
     stack: ['C' , 'Algorithm' ],
-    img: projectPhiloImg,
+    img: {
+      src: projectPhiloImg, 
+      alt: 'Philosophers Project Image', 
+    },
     sourceCode: 'https://github.com/wengcychan/42cursus-push_swap.git',
     liveDemo: null,
   },
@@ -123,7 +147,10 @@ const projects = [
     description:
       '"Dining Philosophers" problem',
     stack: ['C' , 'Concurrent programming' ],
-    img: projectPhiloImg,
+    img: {
+      src: projectPhiloImg, 
+      alt: 'Philosophers Project Image', 
+    },
     sourceCode: 'https://github.com/wengcychan/42cursus-philo.git',
     liveDemo: null,
   },
@@ -133,7 +160,10 @@ const projects = [
     description:
       'Custom shell similar to bash',
     stack: ['C' , 'Unix' ],
-    img: projectMinishellImg,
+    img: {
+      src: projectMinishellImg, 
+      alt: 'Minishell Project Image', 
+    },
     sourceCode: 'https://github.com/wengcychan/42cursus-minishell.git',
     liveDemo: null,
   },
