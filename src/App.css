@@ -24,8 +24,8 @@
   --clr-icon-alt: #fff;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  --gradient-start: #000000;
-  --gradient-end: #331F4D;
+  --btn-gradient-start: #7c55ca;
+  --btn-gradient-end: #f8a9f5
 
 }
 
@@ -121,7 +121,7 @@
 .btn--outline:before {
   content: '';
   position: absolute;
-  background-image: linear-gradient(to right,#7c55ca, #f8a9f5);
+  background-image: linear-gradient(to right,var(--btn-gradient-start), var(--btn-gradient-end));
   right: 100%;
   bottom: 0;
   left: 0;
