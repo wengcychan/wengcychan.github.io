@@ -9,7 +9,7 @@ const Contact = () => {
 
   return (
     <section id='contact' className='section contact'>
-      <h2 className='section__title'>Get In Touch</h2>
+      <h1 className='section__title'>Get In Touch</h1>
       <div className='center'>
         <div>
           {descriptions.map((description) => (

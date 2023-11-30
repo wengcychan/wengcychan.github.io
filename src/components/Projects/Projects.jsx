@@ -16,36 +16,36 @@ const Projects = () => {
 
   return (
     <section id='projects' className='section projects'>
-      <h2 className='section__title'>Projects</h2>
+      <h1 className='section__title'>Projects</h1>
 
       <ul className='project__list'>
 
         <li className='project__list-item'>
-          <button onClick={() => setShowProjects('all')} className='link link--nav'>
+          <button onClick={() => setShowProjects('all')} className='link link--project'>
             All
           </button>
         </li>
 
         <li className='project__list-item'>
-          <button onClick={() => setShowProjects('web')} className='link link--nav'>
+          <button onClick={() => setShowProjects('web')} className='link link--project'>
             Web
           </button>
         </li>
 
         <li className='project__list-item'>
-          <button onClick={() => setShowProjects('gaming')} className='link link--nav'>
+          <button onClick={() => setShowProjects('gaming')} className='link link--project'>
             Gaming
           </button>
         </li>
 
         <li className='project__list-item'>
-          <button onClick={() => setShowProjects('graphics')} className='link link--nav'>
+          <button onClick={() => setShowProjects('graphics')} className='link link--project'>
             Graphics
           </button>
         </li>
 
         <li className='project__list-item'>
-          <button onClick={() => setShowProjects('others')} className='link link--nav'>
+          <button onClick={() => setShowProjects('others')} className='link link--project'>
             Others
           </button>
         </li>

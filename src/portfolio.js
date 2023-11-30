@@ -1,4 +1,3 @@
-import backgroundImg from './images/home-page.png'
 import aboutImg from './images/about-me.png'
 import projectGreenBinImg from './images/projects/web/GreenBin.png'
 import projectRollToRootImg from './images/projects/gaming/roll-to-root.png'
@@ -21,7 +20,6 @@ const home = {
     email: 'mailto:wengcychan95@gmail.com',
     github: 'https://github.com/wengcychan',
   },
-  img: backgroundImg,
   icons: {
     EmailIcon: MdEmail,
     GithubIcon: FaGithub

@@ -1,31 +1,39 @@
 .home {
   height: 100vh;
+  background-image: url(../../images/home-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  background-position: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home__name {
+  color: var(--clr-fg);
 }
 
 .home__content {
   flex-direction: column;
 }
 
-.home__name {
-  color: var(--clr-primary);
-}
-
 .home__role {
   margin-top: 0.2em;
-  font-size: 3rem;
 }
 
-.home__about,
 .home__contact {
-  margin-top: 2.4em;
+  margin-top: 1.8em;
 }
 
 .home .link--icon {
-  margin-right: 1.5em;
+  margin: 0.4em;
+  font-size: 2.3rem;
 }
 
-.home .link--icon .icon {
-  font-size: 2.3rem;
+.home__about{
+  margin-top: 0.5em;
+  width: 50%;
+  transform: translateX(50%);
 }
 
 @media (max-width: 600px) {

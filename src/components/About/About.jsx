@@ -7,7 +7,7 @@ const About = () => {
 
   return (
     <section id='about' className='section about'>
-      <h2 className='section__title'>About Me</h2>
+      <h1 className='section__title'>About Me</h1>
       <div className='center'>
         <div>
           {descriptions.map((description) => (

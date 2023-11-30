@@ -7,32 +7,31 @@ const Home = () => {
 
   return (
     <div className='home center'>
-      <div className='home__content left'>
-        <h1>
+      <div className='home__content'>
+        <h1 className='home__name'>
           Hi, I am {name}
         </h1>
 
-        <h2 className='home__role'>{role}</h2>
+        <h2 className='home__role'>
+          {role}
+        </h2>
 
-        <div className='home__contact center'>
-
-          <div>
+        <div className='home__contact'>
             <a
               href={social.github}
               aria-label='github'
-              className='link link--icon'
+              className='link'
             >
-              <GithubIcon className='icon'/>
+              <GithubIcon className='link--icon'/>
             </a>
 
             <a
               href={social.email}
               aria-label='email'
-              className='link link--icon'
+              className='link'
             >
-              <EmailIcon className='icon'/>
+              <EmailIcon className='link--icon'/>
             </a>
-          </div>
         </div>
 
         <a href='#about'>
@@ -40,9 +39,6 @@ const Home = () => {
             More about me
           </span>
         </a>  
-      </div>
-      <div className='home__background'>
-        <img src={ img } alt="background" width="50%"/>
       </div>
     </div>
   )
