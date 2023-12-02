@@ -1,15 +1,41 @@
+.about {
+  height: 100vh;
+}
+
 .about__desc__container {
   flex:50%;
 }
 .about__desc {
-  font-size: 1.2rem;
-  margin: 3em 0;
+  font-size: 1.25rem;
+  margin: 2em 0;
   text-align: justify;
 }
 
 .about__img__container {
   flex: 50%;
   padding-left: 10em;
+}
+
+.spotlight__container {
+  position: relative;
+}
+
+.about__img__container img {
+  border-radius: 10%;
+  z-index: 1;
+  position: relative;
+}
+
+.spotlight {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: #1F41BB;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -48%);
+  box-shadow: 0 0 25em #132f92, 0 0 50em #1F41BB, 0 0 60em #3c5cd0; /* Adjust the shadow size and color */
 }
 
 @media (max-width: 600px) {
