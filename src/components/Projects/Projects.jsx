@@ -8,11 +8,18 @@ const Projects = () => {
 
   if (!projects.length) return null
 
-  const [showProjects, setShowProjects] = useState('all')
+  const [showProjects, setShowProjects] = useState('All')
 
-  const projectsToShow = showProjects == 'all' 
+  const projectCategories = ['All', ...new Set(projects.map((project) => project.category))]
+
+  const projectsToShow = showProjects == 'All' 
     ? projects 
     : projects.filter(project => project.category == showProjects)
+
+
+  const handleShowProject = (projectCategory) => {
+    setShowProjects(projectCategory)
+  }
 
   return (
     <section id='projects' className='section projects'>
@@ -20,36 +27,18 @@ const Projects = () => {
 
       <ul className='project__list'>
 
-        <li className='project__list-item'>
-          <button onClick={() => setShowProjects('all')} className='link link--project'>
-            All
-          </button>
-        </li>
-
-        <li className='project__list-item'>
-          <button onClick={() => setShowProjects('web')} className='link link--project'>
-            Web
-          </button>
-        </li>
-
-        <li className='project__list-item'>
-          <button onClick={() => setShowProjects('gaming')} className='link link--project'>
-            Gaming
-          </button>
-        </li>
-
-        <li className='project__list-item'>
-          <button onClick={() => setShowProjects('graphics')} className='link link--project'>
-            Graphics
-          </button>
-        </li>
-
-        <li className='project__list-item'>
-          <button onClick={() => setShowProjects('others')} className='link link--project'>
-            Others
-          </button>
-        </li>
-
+        {projectCategories.map((projectCategory) => (
+          <li 
+            key={ uniqid() } 
+            onClick={ () => handleShowProject(projectCategory) }
+            className='project__list__item'
+            aria-selected={ showProjects === projectCategory ? 'true' : 'false' }
+          >
+            <button className={ showProjects === projectCategory ? 'link project__category__link project__category__link--selected' : 'link project__category__link' }>
+              { projectCategory }
+            </button> 
+          </li>
+        ))}
       </ul>
 
       <div className='projects__grid'>

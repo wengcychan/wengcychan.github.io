@@ -38,7 +38,7 @@ const about = {
 const projects = [
   {
     name: 'GreenBin',
-    category: 'web',
+    category: 'Web',
     description:
       'Waste management system',
     stack: ['React', 'HTML', 'CSS'],
@@ -51,7 +51,7 @@ const projects = [
   },
   {
     name: 'Portfolio',
-    category: 'web',
+    category: 'Web',
     description:
       'This personal portfolio',
     stack: ['React', 'HTML', 'CSS'],
@@ -64,7 +64,7 @@ const projects = [
   },
   {
     name: 'Roll to Root',
-    category: 'gaming',
+    category: 'Gaming',
     description:
       'Game inspired by French Petanque',
     stack: ['Unity', 'C#'],
@@ -77,7 +77,7 @@ const projects = [
   },
   {
     name: 'Crowd Ban',
-    category: 'gaming',
+    category: 'Gaming',
     description:
       'Crowd control game',
     stack: ['Unity', 'C#'],
@@ -90,7 +90,7 @@ const projects = [
   },
   {
     name: 'Community360',
-    category: 'gaming',
+    category: 'Gaming',
     description:
       'City planning platform',
     stack: ['Unity3D', 'ArcGIS Maps SDK'],
@@ -103,7 +103,7 @@ const projects = [
   },
   {
     name: 'MiniRT',
-    category: 'graphics',
+    category: 'Graphics',
     description:
       'Raytracing project',
     stack: ['C'],
@@ -116,7 +116,7 @@ const projects = [
   },
   {
     name: 'FdF',
-    category: 'graphics',
+    category: 'Graphics',
     description:
       'Wireframe model of a landscape',
     stack: ['C'],
@@ -129,7 +129,7 @@ const projects = [
   },
   {
     name: 'Push Swap',
-    category: 'others',
+    category: 'Others',
     description:
       'Sort data on a stack',
     stack: ['C' , 'Algorithm' ],
@@ -142,7 +142,7 @@ const projects = [
   },
   {
     name: 'Philosophers',
-    category: 'others',
+    category: 'Others',
     description:
       '"Dining Philosophers" problem',
     stack: ['C' , 'Concurrent programming' ],
@@ -155,7 +155,7 @@ const projects = [
   },
   {
     name: 'Minishell',
-    category: 'others',
+    category: 'Others',
     description:
       'Custom shell similar to bash',
     stack: ['C' , 'Unix' ],

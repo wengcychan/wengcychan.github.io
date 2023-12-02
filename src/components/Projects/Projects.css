@@ -12,7 +12,24 @@
   margin-bottom: 1.5em;
 }
 
-.project__list-item {
+.project__list__item {
   margin-right: 1.5em;
   font-size: 1.2em;
+}
+
+.project__category__link::before {
+  content: '';
+  display: inline;
+  width: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.2em;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--clr-fg-alt);
+  transition: width 0.2s ease-in;
+}
+
+.project__category__link.project__category__link--selected::before {
+  width:100%;
 }

@@ -68,33 +68,16 @@
   transform: translateY(-6px);
 }
 
-.link--project:hover,
+.link--nav {
+  font-weight: 500;
+}
+
 .link--nav:hover {
   color: var(--clr-fg-alt);
 }
 
-.link:focus {
+.link--nav:focus {
   color: var(--clr-fg-alt);
-}
-
-.link--project::before {
-  content: '';
-  display: inline;
-  width: 0%;
-  height: 0.2em;
-  position: absolute;
-  bottom: 0;
-  background-color: var(--clr-fg-alt);
-  transition: width 0.2s ease-in;
-}
-
-.link:hover::before,
-.link:focus::before {
-  width: 100%;
-}
-
-.link--nav {
-  font-weight: 500;
 }
 
 .btn {

@@ -10,7 +10,7 @@
 .skills__category {
   display: inline-block;
   position: relative;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.8em;
 }
 
 .skills__category::after {
