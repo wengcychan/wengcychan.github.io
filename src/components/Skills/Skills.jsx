@@ -1,7 +1,6 @@
 import uniqid from 'uniqid'
 import { skills } from '../../portfolio'
 import './Skills.css'
-import { FaReact } from 'react-icons/fa';
 
 const Skills = () => {
 

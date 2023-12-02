@@ -1,21 +1,30 @@
+.contact__desc__container {
+  flex: 50%;
+}
+
 .contact__desc {
-  font-size: 1rem;
-  max-width: 600px;
-  margin: 2em;
+  font-size: 1.25rem;
+  margin: 2em 0;
 }
 
 .contact__social {
+  flex: 50%;
   flex-direction: column;
 }
 
-.contact__socialItem {
-  padding: 1rem;
+.contact__social__item {
+  font-size: 1.25rem;
+  padding-left: 5em;
   display: flex;
   align-items: center;
 }
 
-.contact .icon {
-  padding-right: 0.5rem;
+.contact__social__item:first-child {
+  padding-bottom: 1.5em;
+}
+
+.contact__icon {
+  margin-right: 1em;
   font-size: 1.5rem;
 }
 
