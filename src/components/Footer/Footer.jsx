@@ -11,16 +11,16 @@ const Footer = () => {
       <a
         href={social.github}
         aria-label='github'
-        className='link link--icon'
+        className='link'
       >
-        <GithubIcon className='icon'/>
+        <GithubIcon className='link--icon'/>
       </a>
       <a
         href={social.email}
         aria-label='email'
-        className='link link--icon'
+        className='link'
       >
-        <EmailIcon className='icon'/>
+        <EmailIcon className='link--icon'/>
       </a>
     </footer>
   )
