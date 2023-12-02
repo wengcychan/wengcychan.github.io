@@ -43,11 +43,13 @@
 .center {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .left {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .link {
