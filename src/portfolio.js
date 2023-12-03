@@ -13,6 +13,25 @@ import { SiC, SiCplusplus, SiCsharp, SiMongodb, SiBlender, SiCanva, SiGimp } fro
 import { MdEmail } from "react-icons/md";
 import { FaPhoneFlip } from "react-icons/fa6";
 
+const navbar = [
+  {
+    name: 'About',
+    href: '#about',
+  },
+  {
+    name: 'Projects',
+    href: '#projects',
+  },
+  {
+    name: 'Skills',
+    href: '#skills',
+  },
+  {
+    name: 'Contact',
+    href: '#contact',
+  }
+]
+
 const home = {
   name: 'Wing',
   role: 'A Software Developer',
@@ -275,4 +294,4 @@ const contact = {
   },
 }
 
-export { home, about, projects, skills, contact }
+export { navbar, home, about, projects, skills, contact }
