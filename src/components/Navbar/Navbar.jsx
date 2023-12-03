@@ -21,7 +21,7 @@ const Navbar = () => {
           <a
             href='#about'
             onClick={toggleNavList}
-            className='link link--nav'
+            className='link nav__link'
           >
             About
           </a>
@@ -31,7 +31,7 @@ const Navbar = () => {
           <a
             href='#projects'
             onClick={toggleNavList}
-            className='link link--nav'
+            className='link nav__link'
           >
             Projects
           </a>
@@ -41,7 +41,7 @@ const Navbar = () => {
           <a
             href='#skills'
             onClick={toggleNavList}
-            className='link link--nav'
+            className='link nav__link'
           >
             Skills
           </a>
@@ -51,7 +51,7 @@ const Navbar = () => {
           <a
             href='#contact'
             onClick={toggleNavList}
-            className='link link--nav'
+            className='link nav__link'
           >
             Contact
           </a>

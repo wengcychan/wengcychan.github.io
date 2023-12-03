@@ -1,13 +1,13 @@
 .nav {
   display: flex;
   height: 5rem;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   justify-content: flex-end;
   padding-right: 3rem;
-  background-color: #100F20;
-  z-index: 2;
+  background-color: transparent;
+  z-index: 1;
 }
 
 @media (max-width: 600px) {
@@ -22,7 +22,7 @@
 }
 
 .nav__list-item {
-  margin-left: 1.5em;
+  margin-left: 2em;
 }
 
 .app .nav__hamburger {
@@ -59,4 +59,24 @@
     z-index: 2;
     margin-left: 0.8em;
   }
+}
+
+.nav__link {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.nav__link::before {
+  content: '';
+  display: inline;
+  width: 0%;
+  height: 0.2em;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--clr-fg-alt);
+  transition: width 0.2s ease-in;
+}
+
+.nav__link:hover::before {
+  width:100%;
 }
