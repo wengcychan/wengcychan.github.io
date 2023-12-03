@@ -1,5 +1,3 @@
-import { useContext } from 'react'
-import { ThemeContext } from './contexts/theme'
 import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home/Home'
 import About from './components/About/About'
@@ -11,10 +9,9 @@ import Footer from './components/Footer/Footer'
 import './App.css'
 
 const App = () => {
-  const [{ themeName }] = useContext(ThemeContext)
 
   return (
-    <div id='top' className={`${themeName} app`}>
+    <div id='top' className='app'>
       <Navbar />
 
       <main>
