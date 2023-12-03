@@ -47,9 +47,11 @@ const home = {
 
 const about = {
   descriptions: [
-    '📚 I am currently studying at Hive Helsinki, transitioning from traffic engineering to software development.',
-    '💻 I am exploring web and game development, along with C and C++ programming languages.',
-    '💡 I love solving problems and discovering new things. I am excited to use what I learn to create innovative tech solutions.'
+    'Student at coding school Hive Helsinki 📚',
+    'Former traffic engineer 🚦',
+    'Learning web and game development, along with C and C++ 🖥️',
+    'I love solving problems and discovering new things',
+    'I am excited to create innovative tech solutions'
   ],
   img: aboutImg,
 }
