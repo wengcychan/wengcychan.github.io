@@ -45,6 +45,19 @@
   width:100%;
 }
 
+.btn--icon {
+  padding: 0;
+}
+
+.btn--icon:hover,
+.btn--icon:focus {
+  color: var(--clr-fg-alt);
+}
+
+.btn--icon:active {
+  transform: translateY(-5px);
+}
+
 @media (max-width: 600px) {
   .nav {
     height: 6em;

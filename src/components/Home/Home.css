@@ -37,6 +37,21 @@
   transform: translateX(50%);
 }
 
+.home__btn {
+  color: var(--clr-fg);
+  border: 1px solid var(--clr-fg);
+  border-radius: 0.5em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.home__btn:hover,
+.home__btn:focus {
+  box-shadow: 0 0 15px var(--clr-fg), 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 @media (max-width: 600px) {
   .app .home {
     margin-top: 2em;
