@@ -30,6 +30,15 @@
   transition: width 0.2s ease-in;
 }
 
+.project__category__link {
+  transition: transform 0.3s;
+}
+
+.project__category__link:hover,
+.project__category__link.project__category__link--selected {
+  transform: translateY(-3px);
+}
+
 .project__category__link.project__category__link--selected::before {
   width:100%;
 }

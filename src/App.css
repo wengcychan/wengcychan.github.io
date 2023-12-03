@@ -19,14 +19,15 @@
   --clr-bg-alt: #2a2f4c;
   --clr-fg: #e2e2ef;
   --clr-fg-alt: #9340FF;
+  --clr-text-alt: #c8c7c7;
   --clr-primary: #90a0d9;
   --clr-icon: #d9d9d9;
   --clr-icon-alt: #fff;
-  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  --btn-gradient-start: #7c55ca;
-  --btn-gradient-end: #f8a9f5
-
+  --clr-project-card: #1D1F33;
+  --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  --plain-btn-alt: #313445;
+  --btn: #2c2f49;
+  --btn-alt: #606595;
 }
 
 .section {

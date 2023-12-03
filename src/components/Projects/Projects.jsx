@@ -32,9 +32,13 @@ const Projects = () => {
             key={ uniqid() } 
             onClick={ () => handleShowProject(projectCategory) }
             className='project__list__item'
-            aria-selected={ showProjects === projectCategory ? 'true' : 'false' }
+            aria-selected={ showProjects === projectCategory 
+              ? 'true' 
+              : 'false' }
           >
-            <button className={ showProjects === projectCategory ? 'link project__category__link project__category__link--selected' : 'link project__category__link' }>
+            <button className={ showProjects === projectCategory 
+              ? 'link project__category__link project__category__link--selected' 
+              : 'link project__category__link' }>
               { projectCategory }
             </button> 
           </li>

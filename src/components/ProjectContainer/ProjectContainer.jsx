@@ -5,40 +5,46 @@ import './ProjectContainer.css'
 
 const ProjectContainer = ({ project }) => {
 
-  const { name, category, description, stack, img, sourceCode, liveDemo } = project
+  const { name, description, stack, img, sourceCode, liveDemo } = project
 
   return (
     <div className='project'>
 
       <h4>{ name }</h4>
 
-      <p className='project__description'>{ description }</p>
+      <p className='project__description'>
+        { description }
+      </p>
     
       <ul className='project__stack'>
         { stack.map((item) => (
-          <li key={ uniqid() } className='project__stack-item btn--outline'>
+          <li key={ uniqid() } className='project__stack-item'>
             { item }
           </li>
         ))}
       </ul>
 
       <img src={ img.src } alt={ img.alt } className='project__img'/>
-    
-      { sourceCode && (
-        <a href={ sourceCode }>
-          <span type='button' className='project__link project__btn btn--outline'>
-            <GithubIcon className='link--icon' /> Source Code
-          </span> 
-        </a>
-      )}
 
-      { liveDemo && (
-        <a href={ liveDemo }>
-          <span type='button' className='project__link project__btn btn--outline'>
-            <DemoIcon className='link--icon' /> Live Demo
-          </span>
-        </a>
-      )}
+      <div className='project__btn__container'>
+        { sourceCode && (
+          <a href={ sourceCode }>
+            <div type='button' className='project__btn'>
+              <GithubIcon className='project__link__icon' />
+              Source Code
+            </div> 
+          </a>
+        )}
+
+        { liveDemo && (
+          <a href={ liveDemo }>
+            <div type='button' className='project__btn'>
+              <DemoIcon className='project__link__icon' />
+              Live Demo
+            </div>
+          </a>
+        )}
+      </div>
 
     </div>
   )
