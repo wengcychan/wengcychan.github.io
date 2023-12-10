@@ -35,7 +35,7 @@ const Home = () => {
         </div>
 
         <a href='#about'>
-          <span type='button' className='home__about btn home__btn'>
+          <span type='button' className='btn home__btn'>
             More about me
           </span>
         </a>  
