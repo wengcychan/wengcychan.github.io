@@ -7,22 +7,22 @@
 }
 
 .about__desc__container {
-  flex:55%;
+  flex:58%;
 }
 
 .about__desc {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   margin: 2em 0;
   list-style-type: disc;
   list-style-position: inside;
 }
 
 .about__desc:nth-last-child(-n+2) {
-  font-size: 1.3rem;
   list-style-type: none;
   margin-top: 4em;
   margin-bottom: 0;
   text-align: center;
+  font-family: 'Courier New', monospace;
 }
 
 .about__desc:last-child {
@@ -30,7 +30,7 @@
 }
 
 .about__img__container {
-  flex: 45%;
+  flex: 42%;
   padding-left: 10em;
 }
 
