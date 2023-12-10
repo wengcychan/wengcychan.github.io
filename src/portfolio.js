@@ -7,6 +7,7 @@ import projectminiRTImg from './images/projects/graphics/miniRT.png'
 import projectFdFImg from './images/projects/graphics/fdf.png'
 import projectMinishellImg from './images/projects/others/minishell.png'
 import projectPhiloImg from './images/projects/others/philo.png'
+import skillsImg from './images/skills.png'
 
 import { FaJs, FaReact, FaHtml5, FaCss3, FaNodeJs, FaUnity, FaGitAlt, FaGithub, FaFigma } from 'react-icons/fa';
 import { SiC, SiCplusplus, SiCsharp, SiMongodb, SiBlender, SiCanva, SiGimp } from "react-icons/si";
@@ -189,97 +190,105 @@ const projects = [
   },
 ]
 
-const skills = [
-  {
-    category: 'Languages',
-    stack: [
-      {
-        description: 'C',
-        Icon: SiC
-      },
-      {
-        description: 'C++',
-        Icon: SiCplusplus
-      },
-      {
-        description: 'C#',
-        Icon: SiCsharp
-      },
-      {
-        description: 'JavaScript',
-        Icon: FaJs
-      },
-    ]
+const skills = {
+  stacks: [
+    {
+      category: 'Languages',
+      stack: [
+        {
+          description: 'C',
+          Icon: SiC
+        },
+        {
+          description: 'C++',
+          Icon: SiCplusplus
+        },
+        {
+          description: 'C#',
+          Icon: SiCsharp
+        },
+        {
+          description: 'JavaScript',
+          Icon: FaJs
+        },
+      ]
+    },
+    {
+      category: 'Web Development',
+      stack: [
+        {
+          description: 'React',
+          Icon: FaReact
+        },
+        {
+          description: 'HTML5',
+          Icon: FaHtml5
+        },
+        {
+          description: 'CSS3',
+          Icon: FaCss3
+        },
+        {
+          description: 'MongoDB',
+          Icon: SiMongodb
+        },
+        {
+          description: 'Nodejs',
+          Icon: FaNodeJs
+        },
+      ]
+    },
+    {
+      category: 'Gaming',
+      stack: [
+        {
+          description: 'Unity',
+          Icon: FaUnity
+        }
+      ] 
+    },
+    {
+      category: 'Version Control',
+      stack: [
+        {
+          description:'Git',
+          Icon: FaGitAlt
+        },
+        {
+          description: 'GitHub',
+          Icon: FaGithub
+        }
+      ]
+    },
+    {
+      category: 'Design',
+      stack: [
+        {
+          description: 'Figma',
+          Icon: FaFigma
+        },
+        {
+          description: 'Canva',
+          Icon: SiCanva
+        },
+        {
+          description: 'Gimp',
+          Icon: SiGimp
+        },
+        {
+          description: 'Blender',
+          Icon: SiBlender
+        }
+      ]
+    },
+  ],
+  img: {
+    src: skillsImg, 
+    alt: 'Skills Background Image', 
   },
-  {
-    category: 'Web Development',
-    stack: [
-      {
-        description: 'React',
-        Icon: FaReact
-      },
-      {
-        description: 'HTML5',
-        Icon: FaHtml5
-      },
-      {
-        description: 'CSS3',
-        Icon: FaCss3
-      },
-      {
-        description: 'MongoDB',
-        Icon: SiMongodb
-      },
-      {
-        description: 'Nodejs',
-        Icon: FaNodeJs
-      },
-    ]
-  },
-  {
-    category: 'Gaming',
-    stack: [
-      {
-        description: 'Unity',
-        Icon: FaUnity
-      }
-    ] 
-  },
-  {
-    category: 'Version Control',
-    stack: [
-      {
-        description:'Git',
-        Icon: FaGitAlt
-      },
-      {
-        description: 'GitHub',
-        Icon: FaGithub
-      }
-    ]
-  },
-  {
-    category: 'Design',
-    stack: [
-      {
-        description: 'Figma',
-        Icon: FaFigma
-      },
-      {
-        description: 'Canva',
-        Icon: SiCanva
-      },
-      {
-        description: 'Gimp',
-        Icon: SiGimp
-      },
-      {
-        description: 'Blender',
-        Icon: SiBlender
-      }
-    ]
-  },
-]
+}
+
+
 
 const contact = {
   descriptions: [

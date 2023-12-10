@@ -4,14 +4,17 @@ import './Skills.css'
 
 const Skills = () => {
 
+  const { stacks, img } = skills
+
   return (
-    <section id='skills' className='section'>
+    <section id='skills' className='section skills'>
       <h1 className='section__title'>Skills</h1>
+      <img src={ img.src } alt={ img.alt } className='skills__img'/>
       <div>
-        {skills.map(({ category, stack }) => (
+        {stacks.map(({ category, stack }) => (
           <div key={ uniqid() } className='skills__list'>
             <h4 className='skills__category'>{ category }</h4>
-            <div className='center'>
+            <div className='center skills'>
               {stack.map(({ description, Icon }) => (
                 <div key={ uniqid() }>
                   <div className='skills__icon'>

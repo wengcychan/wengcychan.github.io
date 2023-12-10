@@ -1,5 +1,12 @@
+.skills__img {
+  width: 40%;
+  height: auto;
+  float: right;
+  margin-top: 50px;
+}
+
 .skills__list {
-  margin-top: 3.5em;
+  margin-top: 4em;
 }
 
 .skills__list:nth-last-child(-n+3) {
