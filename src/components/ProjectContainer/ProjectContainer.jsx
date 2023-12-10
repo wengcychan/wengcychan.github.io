@@ -24,7 +24,9 @@ const ProjectContainer = ({ project }) => {
         ))}
       </ul>
 
-      <img src={ img.src } alt={ img.alt } className='project__img'/>
+      <div className='project__img__container'>
+        <img src={ img.src } alt={ img.alt } className='project__img'/>
+      </div>
 
       <div className='project__btn__container'>
         { sourceCode && (

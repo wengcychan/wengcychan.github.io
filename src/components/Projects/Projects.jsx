@@ -21,6 +21,17 @@ const Projects = () => {
     setShowProjects(projectCategory)
   }
 
+  const projectGridRows = Math.ceil(projectsToShow.length / 3)
+
+  const projectGridStyle = {
+    maxWidth: '1100px',
+    margin: '0 auto',
+    display: 'grid',
+    gridTemplateColumns: '33% 33% 33%',
+    gridTemplateRows: `repeat(${projectGridRows}, 400px)`,
+    gridGap: '2em'
+  }
+
   return (
     <section id='projects' className='section projects'>
       <h1 className='section__title'>Projects</h1>
@@ -45,7 +56,7 @@ const Projects = () => {
         ))}
       </ul>
 
-      <div className='projects__grid'>
+      <div style={ projectGridStyle }>
         {projectsToShow.map((project) => (
           <ProjectContainer key={ uniqid() } project={ project } />
         ))}

@@ -1,15 +1,8 @@
-.projects__grid {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-  grid-gap: 2em;
-}
-
 .project__list {
   display: flex;
   margin-left: 0.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
+  justify-content: center;
 }
 
 .project__list__item {
