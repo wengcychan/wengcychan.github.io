@@ -293,11 +293,18 @@ const skills = {
 const contact = {
   descriptions: [
     'I am open to exploring internships or roles as a junior software developer.',
-    'Get in touch to discuss project collaborations or just say hi — I am eager to chat and learn about potential opportunities!',
+    'Get in touch to discuss project collaborations or just say hi',
+    '—  I am eager to chat and learn about potential opportunities!',
   ],
   social: {
-    email: 'wengcychan95@gmail.com',
-    phone: '+358 41 474 7515'
+    email: {
+      text: 'wengcychan95@gmail.com',
+      address: 'mailto:wengcychan95@gmail.com'
+    },
+    phone: {
+      text: '+358 41 474 7515',
+      address: 'tel:+358414747515'
+    }
   },
   icons: {
     EmailIcon: MdEmail,

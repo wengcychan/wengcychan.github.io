@@ -54,6 +54,28 @@
   font-weight: 600;
 }
 
+.btn__section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.7em 1.4em;
+  font-weight: 600;
+  background-color: var(--btn);
+  border: 1.5px solid var(--btn-alt);
+  border-radius: 0.7em;
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.btn__section:hover,
+.btn__section:focus {
+  background-color: var(--clr-fg-alt);
+}
+
+.btn__section__icon {
+  margin-right: 0.5em;
+}
+
 @media (max-width: 600px) {
   .section {
     margin-top: 4em;

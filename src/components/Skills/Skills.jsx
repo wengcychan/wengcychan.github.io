@@ -14,7 +14,7 @@ const Skills = () => {
         {stacks.map(({ category, stack }) => (
           <div key={ uniqid() } className='skills__list'>
             <h4 className='skills__category'>{ category }</h4>
-            <div className='center skills'>
+            <div className='center'>
               {stack.map(({ description, Icon }) => (
                 <div key={ uniqid() }>
                   <div className='skills__icon'>

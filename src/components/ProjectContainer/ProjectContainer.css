@@ -50,25 +50,8 @@
 
 .project__btn {
   margin-bottom: 0.8em;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  padding: 0.7em 1.4em;
-  font-weight: 600;
   font-size: 0.8rem;
   margin-right: 1em;
-  background-color: var(--btn);
-  border: 1.5px solid var(--btn-alt);
-  border-radius: 0.7em;
-  z-index: 1;
-  transition: 0.5s ease-in-out;
 }
 
-.project__btn:hover,
-.project__btn:focus {
-  background-color: var(--clr-fg-alt);
-}
 
-.project__link__icon {
-  margin-right: 0.5em;
-}
