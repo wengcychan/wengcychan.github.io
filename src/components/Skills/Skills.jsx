@@ -7,19 +7,25 @@ const Skills = () => {
   const { stacks, img } = skills
 
   return (
-    <section id='skills' className='section skills'>
+    <section id='skills' className='section'>
       <h1 className='section__title'>Skills</h1>
+
       <img src={ img.src } alt={ img.alt } className='skills__img'/>
+
       <div>
         {stacks.map(({ category, stack }) => (
           <div key={ uniqid() } className='skills__list'>
-            <h4 className='skills__category'>{ category }</h4>
+            <h2 className='skills__category'>
+              { category }
+            </h2>
             <div className='center'>
               {stack.map(({ description, Icon }) => (
                 <div key={ uniqid() }>
-                  <div className='skills__icon'>
-                    <Icon style={{ fontSize: '40px' }}/>
-                    <h6>{ description }</h6>
+                  <div className='skills__icon__container'>
+                    <Icon className='skills__icon' />
+                    <p className='skills__description'>
+                      { description }
+                    </p>
                   </div>
                 </div>
               ))}
@@ -27,6 +33,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
+
     </section>
   )
 }

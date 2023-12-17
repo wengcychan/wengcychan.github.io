@@ -17,9 +17,9 @@ const App = () => {
       <main>
         <Home />
         <About />
-        <Projects />
-        {/* <Skills /> */}
-        {/* <Contact /> */}
+        {/* <Projects /> */}
+        <Skills />
+        <Contact />
       </main>
 
       <ScrollToTop />

@@ -65,6 +65,12 @@
   margin-right: 0.5em;
 }
 
+@media (max-width: 900px) {
+  .section {
+    padding: 5em 3em;
+  }
+}
+
 @media (max-width: 600px) {
   .section {
     padding: 5em 2em;

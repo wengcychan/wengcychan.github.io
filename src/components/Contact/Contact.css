@@ -20,8 +20,14 @@
 }
 
 @media (max-width: 600px) {
-  .app .contact {
-    align-items: flex-start;
+  .contact__desc {
+    font-size: 0.8rem;
     margin-top: 2em;
+    text-align: center;
+  }
+  .contact__btn {
+    margin-bottom: 1.5em;
+    width: 100%;
+    font-size: 0.7rem;
   }
 }
