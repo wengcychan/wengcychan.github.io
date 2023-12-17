@@ -6,11 +6,9 @@ import './Projects.css'
 
 const Projects = () => {
 
-  if (!projects.length) return null
-
   const [showProjects, setShowProjects] = useState('All')
 
-  const projectCategories = ['All', ...new Set(projects.map((project) => project.category))]
+  const projectCategories = ['All', ...new Set(projects.map(project => project.category))]
 
   const projectsToShow = showProjects == 'All' 
     ? projects 

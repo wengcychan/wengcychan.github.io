@@ -1,5 +1,5 @@
 .about {
-  height: 100vh;
+  padding-bottom: 10em;
 }
 
 .about__container {
@@ -7,14 +7,13 @@
 }
 
 .about__desc__container {
-  flex:58%;
+  flex: 58%;
 }
 
 .about__desc {
   font-size: 1.25rem;
   margin: 2em 0;
   list-style-type: disc;
-  list-style-position: inside;
 }
 
 .about__desc:nth-last-child(-n+2) {
@@ -56,16 +55,18 @@
   box-shadow: 0 0 25em #132f92, 0 0 50em #1F41BB, 0 0 60em #3c5cd0; /* Adjust the shadow size and color */
 }
 
-@media (max-width: 600px) {
-  .app .about {
-    align-items: flex-start;
-    margin-top: 2em;
-  }
-}
-
 @media (max-width: 1430px) {
   .about__img__container {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .about__desc {
+    font-size: 0.8rem;
+  }
+  .about {
+    padding-bottom: 2em;
   }
 }
 

@@ -4,22 +4,15 @@ import { home } from '../../portfolio'
 const Footer = () => {
 
   const { social, icons } = home
+  const { github, email } = social
   const { EmailIcon, GithubIcon } = icons
   
   return (
     <footer className='footer'>
-      <a
-        href={social.github}
-        aria-label='github'
-        className='link'
-      >
+      <a href={ github } aria-label='github' target='_blank'>
         <GithubIcon className='link--icon'/>
       </a>
-      <a
-        href={social.email}
-        aria-label='email'
-        className='link'
-      >
+      <a href={ email } aria-label='email'>
         <EmailIcon className='link--icon'/>
       </a>
     </footer>

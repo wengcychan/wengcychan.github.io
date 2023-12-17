@@ -54,7 +54,10 @@ const about = {
     'I love solving problems and discovering new things',
     'I am excited to create innovative tech solutions'
   ],
-  img: aboutImg,
+  img: {
+    src: aboutImg,
+    alt: 'About Me'
+  }
 }
 
 const projects = [
@@ -287,8 +290,6 @@ const skills = {
     alt: 'Skills Background Image', 
   },
 }
-
-
 
 const contact = {
   descriptions: [

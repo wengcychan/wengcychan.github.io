@@ -2,12 +2,13 @@ import { home } from '../../portfolio'
 import './Home.css'
 
 const Home = () => {
-  const { name, role, social, img, icons } = home
+  const { name, role, social, icons } = home
+  const { github, email } = social
   const { EmailIcon, GithubIcon } = icons
 
   return (
     <div className='home center'>
-      <div className='home__content'>
+      <div>
         <h1 className='home__name'>
           Hi, I am {name}
         </h1>
@@ -17,19 +18,10 @@ const Home = () => {
         </h2>
 
         <div className='home__contact'>
-            <a
-              href={social.github}
-              aria-label='github'
-              className='link'
-            >
+            <a href={ github } aria-label='github' target='_blank'>
               <GithubIcon className='link--icon'/>
             </a>
-
-            <a
-              href={social.email}
-              aria-label='email'
-              className='link'
-            >
+            <a href={ email } aria-label='email'>
               <EmailIcon className='link--icon'/>
             </a>
         </div>

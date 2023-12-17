@@ -7,17 +7,12 @@
   background-position: center;
   justify-content: center;
   text-align: center;
-  position: relative;
+  padding-bottom: 6em;
 }
 
 .home__name {
   color: var(--clr-fg);
   font-size: 3rem;
-}
-
-.home__content {
-  flex-direction: column;
-  padding-bottom: 6em;
 }
 
 .home__role {
@@ -41,9 +36,6 @@
   color: var(--clr-fg);
   border: 1px solid var(--clr-fg);
   border-radius: 0.5em;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
   transition: 0.5s ease-in-out;
 }
 
@@ -60,12 +52,32 @@
 
 @media (max-width: 900px) {
   .home__name {
-    font-size: 3.3rem;
+    font-size: 2.5rem;
+  }
+  .home__role {
+    font-size: 1.8rem;
+  }
+  .home .link--icon {
+    font-size: 2rem;
+  }  
+  .home__btn {
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 600px) {
-  .app .home {
-    margin-top: 2em;
+  .home__name {
+    font-size: 2rem;
+  }
+  .home__role {
+    font-size: 1.5rem;
+  }
+  .home .link--icon {
+    font-size: 1.5rem;
+  }
+  .home__btn {
+    font-size: 0.7rem;
   }
 }
+
+
