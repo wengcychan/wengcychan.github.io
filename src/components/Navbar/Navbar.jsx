@@ -10,7 +10,7 @@ const Navbar = () => {
   const toggleNavList = () => setShowNavList(!showNavList)
 
   return (
-    <nav className='center nav'>
+    <nav className={`center nav ${showNavList ? 'nav__showNavList--background': ''}`}>
       <ul
         style={{ display: showNavList ? 'flex' : null }}
         className='nav__list'
@@ -19,8 +19,8 @@ const Navbar = () => {
           <li key={ uniqid() } className='nav__list-item'>
             <a
               href={ href }
-              onClick={toggleNavList}
-              className='link nav__link'
+              onClick={ toggleNavList }
+              className='link'
             >
               { name }
             </a>
@@ -30,11 +30,11 @@ const Navbar = () => {
 
       <button
         type='button'
-        onClick={toggleNavList}
-        className='btn btn--icon nav__meun'
+        onClick={ toggleNavList }
+        className='btn nav__btn--icon nav__meun'
         aria-label='toggle navigation'
       >
-        {showNavList ? <CloseIcon className='icon'/> : <MenuIcon className='icon'/>}
+        {showNavList ? <CloseIcon className='nav__cross-icon'/> : <MenuIcon className='nav__meun-icon'/>}
       </button>
     </nav>
   )
