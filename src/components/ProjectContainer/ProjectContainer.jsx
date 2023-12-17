@@ -9,7 +9,6 @@ const ProjectContainer = ({ project }) => {
 
   return (
     <div className='project'>
-
       <h4>{ name }</h4>
 
       <p className='project__description'>
@@ -17,11 +16,11 @@ const ProjectContainer = ({ project }) => {
       </p>
     
       <ul className='project__stack'>
-        { stack.map((item) => (
+        {stack.map(item =>
           <li key={ uniqid() } className='project__stack-item'>
             { item }
           </li>
-        ))}
+        )}
       </ul>
 
       <div className='project__img__container'>
@@ -29,7 +28,7 @@ const ProjectContainer = ({ project }) => {
       </div>
 
       <div className='project__btn__container'>
-        { sourceCode && (
+        {sourceCode && (
           <a href={ sourceCode }>
             <div type='button' className='btn__section project__btn'>
               <GithubIcon className='btn__section__icon' />
@@ -38,7 +37,7 @@ const ProjectContainer = ({ project }) => {
           </a>
         )}
 
-        { liveDemo && (
+        {liveDemo && (
           <a href={ liveDemo }>
             <div type='button' className='btn__section project__btn'>
               <DemoIcon className='btn__section__icon' />
@@ -47,7 +46,6 @@ const ProjectContainer = ({ project }) => {
           </a>
         )}
       </div>
-
     </div>
   )
 }
