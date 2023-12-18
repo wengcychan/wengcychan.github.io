@@ -22,7 +22,7 @@ const About = () => {
             </ul>
 
             <div className='typewriter'>
-              <span className='prompt'>&gt;</span>
+              <span className='prompt'>$&gt;</span>
               <Typewriter
                 options={{
                   strings: [typewriters[0], typewriters[1]],

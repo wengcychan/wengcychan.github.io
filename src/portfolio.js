@@ -1,10 +1,12 @@
 import aboutImg from './images/about-me.png'
 import projectGreenBinImg from './images/projects/web/GreenBin.png'
+import projectPortfolioImg from './images/projects/web/Portfolio.png'
 import projectRollToRootImg from './images/projects/gaming/roll-to-root.png'
 import projectCrowdBanImg from './images/projects/gaming/crowd-ban.png'
 import projectCommunity360Img from './images/projects/gaming/community360.png'
 import projectminiRTImg from './images/projects/graphics/miniRT.png'
 import projectFdFImg from './images/projects/graphics/fdf.png'
+import projectPushSwapImg from './images/projects/others/push_swap.png'
 import projectMinishellImg from './images/projects/others/minishell.png'
 import projectPhiloImg from './images/projects/others/philo.png'
 import skillsImg from './images/skills.png'
@@ -83,11 +85,11 @@ const projects = [
       'This personal portfolio',
     stack: ['React', 'HTML', 'CSS'],
     img: {
-      src: projectGreenBinImg, 
-      alt: 'GreenBin Project Image', 
+      src: projectPortfolioImg, 
+      alt: 'Portfolio Project Image', 
     },
-    sourceCode: 'https://github.com/wengcychan/portfolio.git',
-    liveDemo: 'https://wengcychan.github.io/portfolio/',
+    sourceCode: 'https://github.com/wengcychan/wengcychan.github.io.git',
+    liveDemo: 'https://wengcychan.github.io',
   },
   {
     name: 'Roll to Root',
@@ -161,8 +163,8 @@ const projects = [
       'Sort data on a stack',
     stack: ['C' , 'Algorithm' ],
     img: {
-      src: projectPhiloImg, 
-      alt: 'Philosophers Project Image', 
+      src: projectPushSwapImg, 
+      alt: 'Push Swap Project Image', 
     },
     sourceCode: 'https://github.com/wengcychan/42cursus-push_swap.git',
     liveDemo: null,
