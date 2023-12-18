@@ -51,8 +51,10 @@ const about = {
     'Student at coding school Hive Helsinki 📚',
     'Former traffic engineer 🚦',
     'Learning web and game development, along with C and C++ 🖥️',
+  ],
+  typewriters: [
     'I love solving problems and discovering new things',
-    'I am excited to create innovative tech solutions'
+    'I am excited to create innovative tech solutions',
   ],
   img: {
     src: aboutImg,

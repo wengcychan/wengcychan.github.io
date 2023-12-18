@@ -2,8 +2,12 @@ import uniqid from 'uniqid'
 import { about } from '../../portfolio'
 import './About.css'
 
+import React, { useEffect, useRef } from 'react';
+import Typewriter from 'typewriter-effect';
+
+
 const About = () => {
-  const { descriptions, img } = about
+  const { descriptions, typewriters, img } = about
 
   return (
     <section id='about' className='section about'>
@@ -11,13 +15,27 @@ const About = () => {
         <h1 className='section__title'>About Me</h1>
     
         <div className='center about__container'>
-          <ul className='about__desc__container'>
-            {descriptions.map(description => 
-              <li className='about__desc' key={ uniqid() }>
-                { description }
-              </li>
-            )}
-          </ul>
+          <div className='about__desc__container'>
+            <ul >
+              {descriptions.map(description => 
+                <li className='about__desc' key={ uniqid() }>
+                  { description }
+                </li>
+              )}
+            </ul>
+
+            <div className='typewriter'>
+              <span className='prompt'>&gt;</span>
+              <Typewriter
+                options={{
+                  strings: [typewriters[0], typewriters[1]],
+                  autoStart: true,
+                  loop: true,
+                  delay: 80,
+                }}
+              />
+            </div>
+          </div>
 
           <div className='about__img__container'>
             <div className='spotlight__container'>
