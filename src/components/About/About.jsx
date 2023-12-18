@@ -1,10 +1,7 @@
 import uniqid from 'uniqid'
 import { about } from '../../portfolio'
 import './About.css'
-
-import React, { useEffect, useRef } from 'react';
 import Typewriter from 'typewriter-effect';
-
 
 const About = () => {
   const { descriptions, typewriters, img } = about
