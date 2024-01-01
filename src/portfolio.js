@@ -1,6 +1,8 @@
 import aboutImg from './images/about-me.png'
 import projectGreenBinImg from './images/projects/web/GreenBin.png'
 import projectPortfolioImg from './images/projects/web/Portfolio.png'
+import projectPhonebookImg from './images/projects/web/Phonebook.png'
+import projectPatientorImg from './images/projects/web/Patientor.png'
 import projectRollToRootImg from './images/projects/gaming/roll-to-root.png'
 import projectCrowdBanImg from './images/projects/gaming/crowd-ban.png'
 import projectCommunity360Img from './images/projects/gaming/community360.png'
@@ -9,10 +11,11 @@ import projectFdFImg from './images/projects/graphics/fdf.png'
 import projectPushSwapImg from './images/projects/others/push_swap.png'
 import projectMinishellImg from './images/projects/others/minishell.png'
 import projectPhiloImg from './images/projects/others/philo.png'
+import projectCppImg from './images/projects/others/cpp.png'
 import skillsImg from './images/skills.png'
 
 import { FaJs, FaReact, FaHtml5, FaCss3, FaNodeJs, FaUnity, FaGitAlt, FaGithub, FaFigma } from 'react-icons/fa';
-import { SiC, SiCplusplus, SiCsharp, SiMongodb, SiBlender, SiCanva, SiGimp } from "react-icons/si";
+import { SiC, SiCplusplus, SiCsharp, SiMongodb, SiBlender, SiCanva, SiGimp, SiTypescript } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneFlip } from "react-icons/fa6";
 
@@ -88,8 +91,34 @@ const projects = [
       src: projectPortfolioImg, 
       alt: 'Portfolio Project Image', 
     },
-    sourceCode: 'https://github.com/wengcychan/wengcychan.github.io.git',
-    liveDemo: 'https://wengcychan.github.io',
+    sourceCode: 'https://github.com/wengcychan/portfolio.git',
+    liveDemo: 'https://wengcychan.github.io/portfolio/',
+  },
+  {
+    name: 'Phonebook',
+    category: 'Web',
+    description:
+      'Phonebook App',
+    stack: ['React', 'Nodejs', 'MongoDB'],
+    img: {
+      src: projectPhonebookImg, 
+      alt: 'Phonebook Project Image', 
+    },
+    sourceCode: 'https://github.com/wengcychan/fullstackopen-phonebook.git',
+    liveDemo: 'https://fullstackopen-part3-we5l.onrender.com',
+  },
+  {
+    name: 'Patientor',
+    category: 'Web',
+    description:
+      'Medical Record Application',
+    stack: ['TypeScript', 'React', 'Material UI'],
+    img: {
+      src: projectPatientorImg, 
+      alt: 'Patientor Project Image', 
+    },
+    sourceCode: 'https://github.com/wengcychan/fullstackopen-patientor.git',
+    liveDemo: 'https://fullstackopen-patientor.onrender.com',
   },
   {
     name: 'Roll to Root',
@@ -140,7 +169,7 @@ const projects = [
       src: projectminiRTImg, 
       alt: 'MiniRT Project Image', 
     },
-    sourceCode: 'https://github.com/wengcychan/hive-42cursus.git',
+    sourceCode: 'https://github.com/wengcychan/42cursus-miniRT.git',
     liveDemo: null,
   },
   {
@@ -195,6 +224,19 @@ const projects = [
     sourceCode: 'https://github.com/wengcychan/42cursus-minishell.git',
     liveDemo: null,
   },
+  {
+    name: 'CPP Modules',
+    category: 'Others',
+    description:
+      'C++ School Projects',
+    stack: ['C++'],
+    img: {
+      src: projectCppImg, 
+      alt: 'C++ Project Image', 
+    },
+    sourceCode: 'https://github.com/wengcychan/42cursus-cpp.git',
+    liveDemo: null,
+  },
 ]
 
 const skills = {
@@ -218,6 +260,10 @@ const skills = {
           description: 'JavaScript',
           Icon: FaJs
         },
+        {
+          description: 'TypeScript',
+          Icon: SiTypescript
+        }
       ]
     },
     {

@@ -29,7 +29,7 @@ const ProjectContainer = ({ project }) => {
 
       <div className='project__btn__container'>
         {sourceCode && (
-          <a href={ sourceCode }>
+          <a href={ sourceCode } target='_blank'>
             <div type='button' className='btn__section project__btn'>
               <GithubIcon className='btn__section__icon' />
               Source Code
@@ -38,7 +38,7 @@ const ProjectContainer = ({ project }) => {
         )}
 
         {liveDemo && (
-          <a href={ liveDemo }>
+          <a href={ liveDemo } target='_blank'>
             <div type='button' className='btn__section project__btn'>
               <DemoIcon className='btn__section__icon' />
               Live Demo
