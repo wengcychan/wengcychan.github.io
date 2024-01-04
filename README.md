@@ -6,6 +6,10 @@ Welcome to the repository of my personal portfolio! This website showcases my pr
 
 🌐 [My Personal Portfolio](https://wengcychan.github.io/portfolio/)
 
+## 📸 Screenshots
+
+![Screenshot Portfolio](./screenshots/Portfolio.gif)
+
 ## 🛠️ Technologies Used
 
 - React
