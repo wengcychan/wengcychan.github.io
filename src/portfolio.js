@@ -1,5 +1,6 @@
 import aboutImg from './images/about-me.png'
 import projectGreenBinImg from './images/projects/web/GreenBin.png'
+import projectHackNextImg from './images/projects/web/HackNext.png'
 import projectPortfolioImg from './images/projects/web/Portfolio.png'
 import projectPhonebookImg from './images/projects/web/Phonebook.png'
 import projectPatientorImg from './images/projects/web/Patientor.png'
@@ -80,6 +81,19 @@ const projects = [
     },
     sourceCode: 'https://github.com/wengcychan/greenbin.git',
     liveDemo: 'https://wengcychan.github.io/greenbin/',
+  },
+  {
+    name: 'HackNext',
+    category: 'Web',
+    description:
+      'post-hackathon Platform',
+    stack: ['React', 'TypeScript', 'Bootstrap'],
+    img: { 
+      src: projectHackNextImg, 
+      alt: 'HackNext Project Image', 
+    },
+    sourceCode: 'https://github.com/wengcychan/hacknext.git',
+    liveDemo: 'https://wengcychan.github.io/hacknext/',
   },
   {
     name: 'Portfolio',
