@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import uniqid from 'uniqid'
+import { v4 as uuidv4 } from 'uuid';
 import { projects } from '../../portfolio'
 import ProjectContainer from '../ProjectContainer/ProjectContainer'
 import './Projects.css'
@@ -23,7 +23,7 @@ const Projects = () => {
       <ul className='project__category'>
         {projectCategories.map(projectCategory => (
           <li 
-            key={ uniqid() } 
+            key={ uuidv4() } 
             onClick={ () => handleShowProject(projectCategory) }
             className='project__category__item'
             aria-selected={ showProjects === projectCategory 
@@ -42,7 +42,7 @@ const Projects = () => {
 
       <div className='project__grid'>
         {projectsToShow.map(project =>
-          <ProjectContainer key={ uniqid() } project={ project } />
+          <ProjectContainer key={ uuidv4() } project={ project } />
         )}
       </div>
     </section>

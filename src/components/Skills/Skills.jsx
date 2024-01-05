@@ -1,4 +1,4 @@
-import uniqid from 'uniqid'
+import { v4 as uuidv4 } from 'uuid';
 import { skills } from '../../portfolio'
 import './Skills.css'
 
@@ -14,13 +14,13 @@ const Skills = () => {
 
       <div>
         {stacks.map(({ category, stack }) => (
-          <div key={ uniqid() } className='skills__list'>
+          <div key={ uuidv4() } className='skills__list'>
             <h2 className='skills__category'>
               { category }
             </h2>
             <div className='center'>
               {stack.map(({ description, Icon }) => (
-                <div key={ uniqid() }>
+                <div key={ uuidv4() }>
                   <div className='skills__icon__container'>
                     <Icon className='skills__icon' />
                     <p className='skills__description'>

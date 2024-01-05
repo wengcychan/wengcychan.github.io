@@ -1,4 +1,4 @@
-import uniqid from 'uniqid'
+import { v4 as uuidv4 } from 'uuid';
 import { contact } from '../../portfolio'
 import './Contact.css'
 
@@ -14,7 +14,7 @@ const Contact = () => {
 
       <div>
         {descriptions.map(description =>
-          <p className='contact__desc' key={ uniqid() }>
+          <p className='contact__desc' key={ uuidv4() }>
             { description }
           </p>
         )}

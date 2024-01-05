@@ -1,4 +1,4 @@
-import uniqid from 'uniqid'
+import { v4 as uuidv4 } from 'uuid';
 import { about } from '../../portfolio'
 import './About.css'
 import Typewriter from 'typewriter-effect';
@@ -15,7 +15,7 @@ const About = () => {
           <div className='about__desc__container'>
             <ul >
               {descriptions.map(description => 
-                <li className='about__desc' key={ uniqid() }>
+                <li className='about__desc' key={ uuidv4() }>
                   { description }
                 </li>
               )}

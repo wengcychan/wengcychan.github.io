@@ -1,4 +1,4 @@
-import uniqid from 'uniqid'
+import { v4 as uuidv4 } from 'uuid';
 import { FaGithub as GithubIcon } from 'react-icons/fa';
 import { FiExternalLink as DemoIcon } from "react-icons/fi";
 import './ProjectContainer.css'
@@ -17,7 +17,7 @@ const ProjectContainer = ({ project }) => {
     
       <ul className='project__stack'>
         {stack.map(item =>
-          <li key={ uniqid() } className='project__stack-item'>
+          <li key={ uuidv4() } className='project__stack-item'>
             { item }
           </li>
         )}

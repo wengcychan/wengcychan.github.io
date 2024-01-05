@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import uniqid from 'uniqid'
+import { v4 as uuidv4 } from 'uuid';
 import { IoMenu as MenuIcon, IoClose as CloseIcon } from "react-icons/io5"
 import { navbar } from '../../portfolio'
 import './Navbar.css'
@@ -16,7 +16,7 @@ const Navbar = () => {
         className='nav__list'
       >
         {navbar.map(({ name, href }) => (
-          <li key={ uniqid() } className='nav__list-item'>
+          <li key={ uuidv4() } className='nav__list-item'>
             <a
               href={ href }
               onClick={ toggleNavList }
