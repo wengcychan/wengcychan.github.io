@@ -86,7 +86,7 @@ const projects = [
     name: 'HackNext',
     category: 'Web',
     description:
-      'post-hackathon Platform',
+      'Post-hackathon Platform',
     stack: ['React', 'TypeScript', 'Bootstrap'],
     img: { 
       src: projectHackNextImg, 
