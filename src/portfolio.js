@@ -4,6 +4,7 @@ import projectHackNextImg from './images/projects/web/HackNext.png'
 import projectPortfolioImg from './images/projects/web/Portfolio.png'
 import projectPhonebookImg from './images/projects/web/Phonebook.png'
 import projectPatientorImg from './images/projects/web/Patientor.png'
+import projectBloglistImg from './images/projects/web/Bloglist.png'
 import projectRollToRootImg from './images/projects/gaming/roll-to-root.png'
 import projectCrowdBanImg from './images/projects/gaming/crowd-ban.png'
 import projectCommunity360Img from './images/projects/gaming/community360.png'
@@ -105,8 +106,21 @@ const projects = [
       src: projectPortfolioImg, 
       alt: 'Portfolio Project Image', 
     },
-    sourceCode: 'https://github.com/wengcychan/portfolio.git',
-    liveDemo: 'https://wengcychan.github.io/portfolio/',
+    sourceCode: 'https://github.com/wengcychan/wengcychan.github.io.git',
+    liveDemo: 'https://wengcychan.github.io/',
+  },
+  {
+    name: 'Patientor',
+    category: 'Web',
+    description:
+      'Medical Record Application',
+    stack: ['TypeScript', 'React', 'Material UI'],
+    img: {
+      src: projectPatientorImg, 
+      alt: 'Patientor Project Image', 
+    },
+    sourceCode: 'https://github.com/wengcychan/fullstackopen-patientor.git',
+    liveDemo: 'https://fullstackopen-patientor.onrender.com',
   },
   {
     name: 'Phonebook',
@@ -122,17 +136,16 @@ const projects = [
     liveDemo: 'https://fullstackopen-part3-we5l.onrender.com',
   },
   {
-    name: 'Patientor',
+    name: 'Bloglist',
     category: 'Web',
     description:
-      'Medical Record Application',
-    stack: ['TypeScript', 'React', 'Material UI'],
+      'Bloglist App',
+    stack: ['React', 'Nodejs', 'Jest'],
     img: {
-      src: projectPatientorImg, 
-      alt: 'Patientor Project Image', 
+      src: projectBloglistImg, 
+      alt: 'Bloglist Project Image', 
     },
-    sourceCode: 'https://github.com/wengcychan/fullstackopen-patientor.git',
-    liveDemo: 'https://fullstackopen-patientor.onrender.com',
+    sourceCode: 'https://github.com/wengcychan/fullstackopen-bloglist.git',
   },
   {
     name: 'Roll to Root',
