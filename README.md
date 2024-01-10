@@ -4,7 +4,7 @@ Welcome to the repository of my personal portfolio! This website showcases my pr
 
 ## 🎥 Website
 
-🌐 [My Personal Portfolio](https://wengcychan.github.io/portfolio/)
+🌐 [My Personal Portfolio](https://wengcychan.github.io/)
 
 ## 📸 Screenshots
 
